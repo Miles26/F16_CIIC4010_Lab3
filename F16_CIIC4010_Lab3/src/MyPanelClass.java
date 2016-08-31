@@ -1,6 +1,8 @@
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Insets;
+import java.awt.Polygon;
+
 import javax.swing.JPanel;
  
 public class MyPanelClass extends JPanel 
@@ -44,7 +46,9 @@ public class MyPanelClass extends JPanel
                         
                         //Draw a oval
                         g.setColor(Color.DARK_GRAY);
-                        g.fillOval(x1 + 70, y1 + 70, x2 - 140, y2 - 140);
+                        g.fillOval((width - 55)/2, (height - 55)/2, 55, 55);
+                        
+                       
                         
             }
 }
